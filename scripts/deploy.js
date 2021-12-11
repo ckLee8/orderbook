@@ -8,12 +8,12 @@ async function main() {
     deployer.address
   );
 
-  const EtherCoinFlip = await hre.ethers.getContractFactory("EtherCoinFlip");
-  const etherCoinFlip = await EtherCoinFlip.deploy();
+  const MatchingMarket = await hre.ethers.getContractFactory("MatchingMarket");
+  const matchingMarket = await MatchingMarket.deploy();
 
-  await etherCoinFlip.deployed();
+  await matchingMarket.deployed();
 
-  console.log("EtherCoinFlip deployed to:", etherCoinFlip.address);
+  console.log("MatchingMarket deployed to:", matchingMarket.address);
 }
 
 main()

@@ -2,7 +2,7 @@ require("@nomiclabs/hardhat-waffle");
 require('dotenv').config();
 
 module.exports = {
-  solidity: "0.8.0",
+  solidity: "0.8.2",
   paths: {
     artifacts: './src/artifacts',
   },
@@ -10,7 +10,7 @@ module.exports = {
     hardhat: {
     },
     rinkeby: {
-      url: "https://rinkeby.infura.io/v3/e488cdb4e70245e8a626ee6c742c57a8",
+      url: "https://rinkeby.infura.io/v3/05acbea0f8c24377b51954e6f3e31ac2",
       accounts: [`0x${process.env.REACT_APP_PRIVATE_KEY}`] 
     }
   }
